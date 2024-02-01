@@ -2,7 +2,7 @@
 class TrigonometricOperations extends Calculator implements CalculatorInterface {
     @Override
     public void start() {
-        System.out.println("三角関数を実行します");
+        System.out.println("三角関数を計算します");
         System.out.print("角度を度で入力してください: ");
         double angleDegrees = scanner.nextDouble();
 

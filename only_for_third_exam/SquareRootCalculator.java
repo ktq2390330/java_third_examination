@@ -3,7 +3,7 @@ public class SquareRootCalculator extends Calculator implements CalculatorInterf
 
     @Override
     public void start() {
-        System.out.println("Calculating Square Root");
+        System.out.println("平方根を計算します");
         System.out.println("数値を入力してください:");
         double number = scanner.nextDouble();
 
