@@ -43,23 +43,26 @@ public class AdvancedCalculator extends Calculator implements CalculatorInterfac
         }
     }
 
+    @Override
+    void printResult() {
+        System.out.println("電卓プログラム - 操作を選んでください:");
+        System.out.println("1. 四則演算");
+        System.out.println("2. 累乗・べき乗");
+        System.out.println("3. 対数");
+        System.out.println("4. 三角関数");
+        System.out.println("5. 平均値計算");
+        System.out.println("6. 平方根計算");
+        System.out.println("7. 終了");
+        System.out.print("整数を入力:");
+    }
     
     @Override
     public void start() {
 
         //メインメニュー
         while (true) {
+            printResult();
             try {
-                System.out.println("電卓プログラム - 操作を選んでください:");
-                System.out.println("1. 四則演算");
-                System.out.println("2. 累乗・べき乗");
-                System.out.println("3. 対数");
-                System.out.println("4. 三角関数");
-                System.out.println("5. 平均値計算");
-                System.out.println("6. 平方根計算");
-                System.out.println("7. 終了");
-                System.out.print("整数を入力:");
-
                 int choice = scanner.nextInt();
 
                 switch (choice) {

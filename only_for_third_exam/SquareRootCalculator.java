@@ -1,5 +1,11 @@
 //平方根
 public class SquareRootCalculator extends Calculator implements CalculatorInterface {
+    double squareRoot;
+
+    @Override
+    void printResult() {
+        System.out.println("結果: " + squareRoot);
+    }
 
     @Override
     public void start() {
@@ -13,7 +19,8 @@ public class SquareRootCalculator extends Calculator implements CalculatorInterf
             return; // エラーが発生したら直ちにメソッドを終了
         }
 
-        double squareRoot = Math.sqrt(number);
-        System.out.println("結果: " + squareRoot);
+        squareRoot = Math.sqrt(number);
+
+        printResult();
     }
 }

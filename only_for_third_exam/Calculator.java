@@ -1,8 +1,8 @@
 //インポート
 import java.util.Scanner;
 
-//親クラス
-public class Calculator {
+//抽象クラス
+public abstract class Calculator {
 
     //インスタンス
     protected Scanner scanner;
@@ -16,6 +16,8 @@ public class Calculator {
     public void closeScanner() {
         scanner.close();
     }
+
+    abstract void printResult();
 
     protected void handleException(CalculatorException e) {
         System.out.println("エラー: " + e.getMessage());

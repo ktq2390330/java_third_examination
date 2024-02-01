@@ -1,5 +1,11 @@
 //平均
 public class AverageCalculator extends Calculator implements CalculatorInterface {
+    double average;
+    
+    @Override
+    void printResult() {
+        System.out.println("結果: " + average);
+    }
 
     @Override
     public void start() {
@@ -13,7 +19,8 @@ public class AverageCalculator extends Calculator implements CalculatorInterface
             sum += Double.parseDouble(number);
         }
 
-        double average = sum / numbers.length;
-        System.out.println("結果: " + average);
+        average = sum / numbers.length;
+
+        printResult();
     }
 }
