@@ -1,4 +1,4 @@
 //インターフェース
-interface CalculatorInterface {
+interface CalculatorInterface{
     void start();
 }
