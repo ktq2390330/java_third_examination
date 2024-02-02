@@ -15,6 +15,7 @@ public class AdvancedCalculator extends Calculator implements CalculatorInterfac
 
     //コンストラクタ
     public AdvancedCalculator(){
+        //各種演算インスタンスの初期化
         this.arithmeticOperations=new ArithmeticOperations();
         this.powerOperations=new PowerOperations();
         this.logarithmicOperations=new LogarithmicOperations();
@@ -23,7 +24,7 @@ public class AdvancedCalculator extends Calculator implements CalculatorInterfac
         this.squareRootCalculator=new SquareRootCalculator();
     }
 
-    //同計算ループの返答用boolean
+    //同じ計算を行うかユーザーに尋ねるためのメソッド
     private boolean askUserForAnotherCalculation(){
         System.out.print("もう一度同じ計算を行いますか？ (1. はい / 2. メニューに戻る / 3. 終了): ");
         int continueChoice=scanner.nextInt();
@@ -35,7 +36,7 @@ public class AdvancedCalculator extends Calculator implements CalculatorInterfac
                 return false;
             case 3:
                 System.out.println("電卓プログラムを終了します。");
-                closeScanner();
+                closeScanner();//スキャナを適切にクローズ
                 System.exit(0);
             default:
                 System.out.println("無効な選択です。メニューに戻ります。");
@@ -45,6 +46,7 @@ public class AdvancedCalculator extends Calculator implements CalculatorInterfac
 
     @Override
     void printResult(){
+        //メニューを表示
         System.out.println("電卓プログラム - 操作を選んでください:");
         System.out.println("1. 四則演算");
         System.out.println("2. 累乗・べき乗");
