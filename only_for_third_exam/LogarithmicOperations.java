@@ -1,11 +1,11 @@
 // 対数計算を行うクラス
 class LogarithmicOperations extends Calculator implements CalculatorInterface{
     // 結果を保持する変数
-    double naturalLog;
+    private double naturalLog;
 
     // 結果を表示するメソッド
     @Override
-    void printResult(){
+    public void printResult(){
         System.out.println("自然対数: "+naturalLog);
     }
 

@@ -1,11 +1,11 @@
 //平均を計算するクラス
 public class AverageCalculator extends Calculator implements CalculatorInterface {
     //結果を保持する変数
-    double average;
+    private double average;
     
     //結果を表示するメソッド
     @Override
-    void printResult(){
+    public void printResult(){
         System.out.println("結果: "+average);
     }
 

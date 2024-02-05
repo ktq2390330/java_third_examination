@@ -1,7 +1,7 @@
 // 三角関数計算を行うクラス
 class TrigonometricOperations extends Calculator implements CalculatorInterface{
     // 計算結果を保持する変数
-    double angleRadians;
+    private double angleRadians;
 
     // 結果を表示するメソッド
     @Override

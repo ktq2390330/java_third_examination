@@ -1,11 +1,11 @@
 // 累乗計算を行うクラス
 public class PowerOperations extends Calculator implements CalculatorInterface{
     // 計算結果を保持する変数
-    double result;
+    private double result;
 
     // 結果を表示するメソッド
     @Override
-    void printResult(){
+    public void printResult(){
         System.out.println("結果: "+result);
     }
 

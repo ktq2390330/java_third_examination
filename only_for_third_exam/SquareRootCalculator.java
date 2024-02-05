@@ -1,11 +1,11 @@
 //平方根計算を行うクラス
 public class SquareRootCalculator extends Calculator implements CalculatorInterface{
     // 計算結果を保持する変数
-    double squareRoot;
+    private double squareRoot;
 
     // 結果を表示するメソッド
     @Override
-    void printResult(){
+    public void printResult(){
         System.out.println("結果: "+squareRoot);
     }
 

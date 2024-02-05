@@ -25,7 +25,7 @@ public class AdvancedCalculator extends Calculator implements CalculatorInterfac
     }
 
     //同じ計算を行うかユーザーに尋ねるためのメソッド
-    private boolean askUserForAnotherCalculation(){
+    public boolean askUserForAnotherCalculation(){
         System.out.print("もう一度同じ計算を行いますか？ (1. はい / 2. メニューに戻る / 3. 終了): ");
         int continueChoice=scanner.nextInt();
 
@@ -45,7 +45,7 @@ public class AdvancedCalculator extends Calculator implements CalculatorInterfac
     }
 
     @Override
-    void printResult(){
+    public void printResult(){
         //メニューを表示
         System.out.println("電卓プログラム - 操作を選んでください:");
         System.out.println("1. 四則演算");

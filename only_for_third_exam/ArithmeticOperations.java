@@ -2,11 +2,11 @@
 public class ArithmeticOperations extends Calculator implements CalculatorInterface {
 
     //結果を保持する変数
-    double result;
+    private double result;
 
     //結果を表示するメソッド
     @Override
-    void printResult(){
+    public void printResult(){
         System.out.println("商: "+result);
     }
 
