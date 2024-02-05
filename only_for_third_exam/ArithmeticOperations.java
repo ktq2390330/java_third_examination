@@ -1,7 +1,7 @@
 // 四則演算
 public class ArithmeticOperations extends Calculator implements CalculatorInterface {
 
-    //結果を保持する変数
+    //割り算の結果を保持する変数
     private double result;
 
     //結果を表示するメソッド
